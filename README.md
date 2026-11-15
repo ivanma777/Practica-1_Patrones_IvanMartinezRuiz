@@ -24,7 +24,7 @@ Problema del enunciado:   las armas pueden producir distintos tipos de daño y l
 
 Aplicación: Weapon actúa como abstracción y mantiene una referencia a DamageRoll, que define cómo se calcula el daño. MeleeWeapon y RangedWeapon representan tipos de arma; PhysicalDamage y ElementalDamage implementan formas distintas de calcular la tirada.
 
-Justificación: se iba a utilizar Bridge porque el tipo de arma y la forma de calcular el daño son dos dimensiones que pueden variar de forma independiente. Al separarlas evitaría tener que crear una clase de arma para cada combinación y me permite añadir armas o tipos de daño sin modificar jerarquía. El caso es que su uso me parecio excesivo en este momento ya que solo hay daño fisico o elemental.
+Justificación: se iba a utilizar Bridge porque el tipo de arma y la forma de calcular el daño son dos dimensiones que pueden variar de forma independiente. Al separarlas evitaría tener que crear una clase de arma para cada combinación y me permite añadir armas o tipos de daño sin modificar jerarquía. El caso es que su uso me parecio excesivo en este momento ya que solo hay daño fisico o elemental y, en el caso de elemntal solo se va a añadir un dado extra, nada más.
 
 Ventaja:se puede combinar una espada o un arco con una implementación de daño físico o elemental sin crear una clase específica para cada combinación. Además, como extra,  ElementalDamage puede reutilizarse para los ataques de Slimes elementales, que también añaden un d4 por elemento. Sin embargo, he decidido no llegar a implementarlo debido a que no justifica del todo el aumento en complejidad.
 
