@@ -1,4 +1,4 @@
-#Explicación uso de patrones
+Explicación uso de patrones
 
 Se han seleccionado cuatro patrones: builder, factory, bridge y strategy. Cada uno de ellos se ha seleccionado con un objetivo y funciones concretas.
 
